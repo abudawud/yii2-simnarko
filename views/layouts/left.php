@@ -1,16 +1,6 @@
 <?php
 
 use mdm\admin\components\MenuHelper;
-
-
-$callback = function($menu){
-    return [
-        'label' => $menu['name'], 
-        'icon' => $menu['data'],
-        'url' => [$menu['route']],
-        'items' => $menu['children']
-    ];
-}
 ?>
 <aside class="main-sidebar">
 

@@ -60,8 +60,8 @@ use yii\widgets\ActiveForm;
     </div>
     <div class="panel-footer text-right">
         <?php if (!Yii::$app->request->isAjax) { ?>
-                <button id="step-prev" style="display: none;" class="btn btn-info"><span class="fa fa-chevron-left"></span> Previous</button>
-                <button id="step-next" class="btn btn-info">Next <span class="fa fa-chevron-right"></span></button>
+                <button type="button" id="step-prev" style="display: none;" class="btn btn-info"><span class="fa fa-chevron-left"></span> Previous</button>
+                <button type="button" id="step-next" class="btn btn-info">Next <span class="fa fa-chevron-right"></span></button>
                 <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['id' => 'step-submit', 'style' => 'display: none', 'class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
         <?php } ?>
         <?php ActiveForm::end(); ?>
